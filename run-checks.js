@@ -5,7 +5,7 @@ var async = require('async');
 var printf = require('printf');
 
 var CHECKS_DIR = path.join(__dirname, 'checks');
-var TIMEOUT = 10000;
+var TIMEOUT = 40000;
 var JS_RE = /^(.+)\.js$/;
 var CHECK_FILENAMES = fs.readdirSync(CHECKS_DIR).filter(function(filename) {
   return JS_RE.test(filename);
