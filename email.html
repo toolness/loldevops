@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>{{subject}}</title>
+<h1>{{subject}}</h1>
+
+<p>Details follow.</p>
+
+{{#stdout}}
+<h4>stdout for <code>{{cmdline}}</code></h4>
+<pre>{{stdout}}</pre>
+{{/stdout}}
+
+{{#stderr}}
+<h4>stderr for <code>{{cmdline}}</code></h4>
+<pre>{{stderr}}</pre>
+{{/stderr}}
+
+{{#err}}
+<h4>error object returned from <code>exec("{{cmdline}}")</code></h4>
+<pre>{{err}}</pre>
+
+<p>For any checks that failed, run
+  <code>node checks/<em>check-name</em>.js</code>
+  from the root of the <code>devopslol</code> repository to see 
+  detailed output.
+</p>
+{{/err}}
