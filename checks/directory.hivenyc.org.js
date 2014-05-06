@@ -1,6 +1,3 @@
-var assert = require('assert');
+var verify200 = require('../lib/verify200');
 
-require('https')
-  .get('https://directory.hivenyc.org/', function(res) {
-    assert.equal(res.statusCode, 200);
-  });
+verify200('https://directory.hivenyc.org/', /Hive NYC/);
