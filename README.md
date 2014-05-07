@@ -25,7 +25,8 @@ Set up this command as a daily `cron` or [Heroku Scheduler][] job
 and you're done.
 
 Alternatively, if you just want to run all the checks and output the
-results to the console, run `run-checks.js`.
+results to stdout, run `run-checks.js`. This script will exit with
+a nonzero exit code if any of the checks failed.
 
 ## Creating a Check
 
