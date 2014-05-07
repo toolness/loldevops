@@ -24,6 +24,9 @@ their status.
 Set up this command as a daily `cron` or [Heroku Scheduler][] job
 and you're done.
 
+Alternatively, if you just want to run all the checks and output the
+results to the console, run `run-checks.js`.
+
 ## Creating a Check
 
 A check is just a node script in the `checks` directory. It should
