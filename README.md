@@ -18,8 +18,8 @@ You'll want to define the following environment variables:
   send status emails to. If undefined, no email will be sent, and
   output will instead be logged to stdout.
 
-Run `email-checks.js` to run all the checks and send an email about
-their status.
+Run `email-checks.js` to run all the checks and send an HTML-formatted
+email about their status.
 
 Set up this command as a daily `cron` or [Heroku Scheduler][] job
 and you're done.
